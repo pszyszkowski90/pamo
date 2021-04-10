@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentKcal">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/weightKcalTextView"
+        android:layout_width="411dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/weight"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <EditText
+        android:id="@+id/ageTextView"
+        android:layout_width="411dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/age"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/heightKcalTextView"
+        android:layout_width="411dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/height"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/kcalValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <RadioGroup
+        android:id="@+id/sexTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <RadioButton
+            android:id="@+id/men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:text="@string/man" />
+
+        <RadioButton
+            android:id="@+id/woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woman" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonWhatEat"
+        android:onClick="actionKcalToFragmentWhatEat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whatEat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kcalValueTextView"
+        app:layout_constraintVertical_bias="0.071"
+        tools:ignore="MissingConstraints,OnClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

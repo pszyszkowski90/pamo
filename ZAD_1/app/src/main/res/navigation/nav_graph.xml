@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main">
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.zad_1.FragmentMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_fragmentBmi"
+            app:destination="@id/second" />
+        <action
+            android:id="@+id/action_main_to_fragmentKcal"
+            app:destination="@id/fragmentKcal" />
+    </fragment>
+    <fragment
+        android:id="@+id/second"
+        android:name="com.example.zad_1.FragmentBmi"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_bmi" >
+        <action
+            android:id="@+id/action_second_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentKcal"
+        android:name="com.example.zad_1.FragmentKcal"
+        android:label="fragment_kcal"
+        tools:layout="@layout/fragment_kcal" >
+        <action
+            android:id="@+id/action_fragmentKcal_to_main"
+            app:destination="@id/main" />
+        <action
+            android:id="@+id/action_fragmentKcal_to_fragmentWhatEat"
+            app:destination="@id/fragmentWhatEat" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWhatEat"
+        android:name="com.example.zad_1.FragmentWhatEat"
+        android:label="fragment_what_eat"
+        tools:layout="@layout/fragment_what_eat" >
+        <action
+            android:id="@+id/action_fragmentWhatEat_to_fragmentKcal"
+            app:destination="@id/fragmentKcal" />
+        <action
+            android:id="@+id/action_fragmentWhatEat_to_main"
+            app:destination="@id/main" />
+    </fragment>
+</navigation>

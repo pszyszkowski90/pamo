@@ -1,8 +1,19 @@
 <resources>
     <string name="app_name">Kalkulator BMI</string>
     <string name="height">Wzrost</string>
+    <string name="age">Wiek</string>
     <string name="weight">Waga</string>
     <string name="bmiValue">Wartość BMI</string>
     <string name="bmiValueDefault">0.0</string>
     <string name="heightDefault">1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="man">Mężczyzna</string>
+    <string name="woman">Kobieta</string>
+    <string name="WhatEatBttn">Co jeść?</string>
+    <string name="HowMouchKcal">Ile mogę zjeść kalorii</string>
+    <string name="bmi">BMI</string>
+    <string name="recipe1"><![CDATA[<ul><li> 		Jajka ugotować na twardo, obrać i ostudzić.</li> 	<li> 		Na sitku odcedzić kukurydzę z groszkiem i umieścić na dnie salaterki (u mnie ok. 18 - 20 cm).</li> 	<li> 		Dodać posiekaną wędlinę a następnie ser żółty. Boki poobkładać połówkami jajek.&nbsp;</li> 	<li> 		Wymieszać składniki sosu i połowę dać na wierch sałatki oraz jajka.</li> 	<li> 		Wyłożyć odcedzonego i posiekanego selera oraz ananasa. Przykryć resztą sosu.</li> 	<li> 		Posypać rzeżuchą oraz cząstkami rzodkiewek.</li> </ul>]]></string>
+    <string name="recipe2"><![CDATA[<ul><li> 		<strong>Kurczak:</strong>&nbsp;wymieszać wszystkie składniki&nbsp;marynaty, włożyć do niej piersi kurczaka. Dokładnie rozprowadzić marynatę po kurczaku i odstawić całość do lodówki na minimum 1 godzinę.</li> 	<li> 		Kurczaka wyjąć z marynaty i przełożyć do garnka, zalać zimną wodą&nbsp;i doprowadzić do wrzenia.</li> 	<li> 		Gotować pod przykryciem przez 10 minut na umiarkowanym ogniu. Odstawić z gazu i pozostawić kurczaka w bulionie do wystudzenia.</li> 	<li> 		<strong>Kanapka:</strong> pokrojone awokado wymieszać delikatnie z majonezem i ułożyć na jednej kromce chleba. Przykryć pokrojoną piersią kurczaka oraz zieleniną. Doprawić solą, pieprzem i przykryć drugą kromką pieczywa.</li> </ul>]]></string>
+    <string name="whatEat">Co zjeść?</string>
 </resources>
