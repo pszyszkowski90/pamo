@@ -20,7 +20,21 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintVertical_bias="0.332"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/buttonQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="actionMainToQuiz"
+        android:text="@string/Quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445"
         tools:ignore="OnClick" />
 
     <Button
@@ -36,6 +50,20 @@
         app:layout_constraintVertical_bias="0.215"
         tools:ignore="OnClick" />
 
+    <Button
+        android:id="@+id/buttonChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="actionMainToChart"
+        android:text="@string/chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535"
+        tools:ignore="OnClick" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="155dp"
@@ -45,6 +73,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonKcal"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintVertical_bias="0.607" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

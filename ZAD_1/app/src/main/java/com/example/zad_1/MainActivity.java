@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+    private MainActivity fmMain;
 
 
     public void actionMainToFragmentBmi(View view){
@@ -35,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
         NavDirections action = FragmentKcalDirections.actionFragmentKcalToFragmentWhatEat();
         Navigation.findNavController(view).navigate(action);
     }
+    public void actionMainToQuiz(View view){
+        NavDirections action = FragmentMainDirections.actionMainToFragmentQuiz();
+        Navigation.findNavController(view).navigate(action);
+    }
+    public void actionMainToChart(View view){
+        NavDirections action = FragmentMainDirections.actionMainToFragmentChart();
+        Navigation.findNavController(view).navigate(action);
+    }
+
     static void setKcal(int kcalIn){
         kcal = kcalIn;
     }
